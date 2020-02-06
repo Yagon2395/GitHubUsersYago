@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".views.activitys.MainActivity">
+
+    <data>
+        <variable
+            name="user"
+            type="com.example.githubusers_testecriar_yago.models.User" />
+    </data>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:text="@{user.login}"
+        android:gravity="center_vertical"
+        android:layout_height="48dp"/>
+</layout>

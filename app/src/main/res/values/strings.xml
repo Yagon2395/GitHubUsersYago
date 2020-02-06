@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">GitHubUsers</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="users_title">Usuários do GitHub</string>
+
+    <string name="user_empty">Nenhum usuário encontrado :(</string>
+    <string name="user_failed">Uma falha inesperada aconteceu =/, toque aqui para tentar novamente </string>
+</resources>
