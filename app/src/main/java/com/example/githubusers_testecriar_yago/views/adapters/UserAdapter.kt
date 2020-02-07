@@ -4,7 +4,6 @@ import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.example.githubusers_testecriar_yago.databinding.UserItemBinding
-import com.example.githubusers_testecriar_yago.models.AdapterItemsContract
 import com.example.githubusers_testecriar_yago.models.User
 
 class UserAdapter(var items: List<User>) : RecyclerView.Adapter<UserAdapter.ViewHolder>(),
@@ -34,6 +33,7 @@ class UserAdapter(var items: List<User>) : RecyclerView.Adapter<UserAdapter.View
 
         fun bind(user: User) {
             binding.user = user
+            binding.imageUrl = user.avatar_url
             binding.executePendingBindings()
         }
     }

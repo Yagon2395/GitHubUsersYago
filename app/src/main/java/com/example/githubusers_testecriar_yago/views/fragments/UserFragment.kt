@@ -7,9 +7,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.githubusers_testecriar_yago.databinding.FragmentUserBinding
 import com.example.githubusers_testecriar_yago.views.adapters.UserAdapter
 import com.example.githubusers_testecriar_yago.models.User
-import com.example.githubusers_testecriar_yago.databinding.FragmentUserBinding
 
 import com.example.githubusers_testecriar_yago.viewmodels.MainActivityViewModel
 

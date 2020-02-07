@@ -36,6 +36,13 @@ dependencies {
     implementation "com.squareup.retrofit2:retrofit:$retrofit_version"
     implementation "com.squareup.retrofit2:converter-gson:$retrfitGsonConverter_version"
 
+    // Picasso
+    implementation "com.squareup.picasso:picasso:$picasso_version"
+
+    implementation 'jp.wasabeef:picasso-transformations:2.2.1'
+
+    implementation "androidx.cardview:cardview:$cardview_version"
+
     implementation 'androidx.legacy:legacy-support-v4:1.0.0'
     implementation 'androidx.recyclerview:recyclerview:1.0.0'
     implementation 'androidx.appcompat:appcompat:1.1.0'
