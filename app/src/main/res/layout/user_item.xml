@@ -33,7 +33,6 @@
                 android:id="@+id/user_photo"
                 android:layout_width="80dp"
                 android:layout_height="80dp"
-                android:src="@{imageUrl}"
                 android:layout_alignParentLeft="true"
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
