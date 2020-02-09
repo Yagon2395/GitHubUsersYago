@@ -7,17 +7,16 @@
     tools:context=".views.activitys.MainActivity">
 
     <data>
-        <variable
-            name="user"
-            type="com.example.githubusers_testecriar_yago.models.User" />
+        <import type="android.view.View" />
 
         <variable
-            name="imageUrl"
-            type="String" />
+            name="user"
+            type="com.example.githubusers_testecriar_yago.models.entities.User" />
     </data>
 
 
     <androidx.cardview.widget.CardView
+        android:id="@+id/cardviewuser"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginBottom="16dp"
@@ -37,7 +36,7 @@
                 android:layout_alignParentTop="true"
                 android:layout_alignParentBottom="true"
                 android:layout_marginRight="16dp"
-                app:profileImage="@{imageUrl}"
+                app:profileImage="@{user.avatar_url}"
                 />
 
             <TextView

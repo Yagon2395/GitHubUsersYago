@@ -1,12 +1,47 @@
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 
 buildscript {
+    // Kotlin
     ext.kotlin_version = '1.3.61'
+    // Gradle
     ext.gradle_version = '5.4.1'
+    // Build Gradle version
+    ext.buildGradle_version = '3.5.3'
+    // Navigation
+    ext.navigation_version = '1.0.0-alpha04'
+    // Work
+    ext.work_version = '1.0.0-alpha04'
+    // Core-ktx
+    ext.coreKtx_version = '1.0.0'
+    // AppCompat
+    ext.appCompat_version = '1.0.0'
+    // Constraint Layout
+    ext.constraintLayout_version = '1.1.3'
+    // Recycler View
+    ext.recyclerView_version = '1.0.0'
+    // Legacy Support v4
+    ext.legacySupport_version = '1.0.0'
+    // Retrofit
     ext.retrofit_version = '2.5.0'
+    // RetrofitConverter
     ext.retrfitGsonConverter_version = '2.5.0'
+    // RetrofitLogger
+    ext.retrofitLogger_version = '3.9.1'
+    // CardView
     ext.cardview_version = '1.0.0'
+    // Picasso
     ext.picasso_version = '2.71828'
+    // PicassoTransformations
+    ext.picassoTransformations_version = '2.2.1'
+
+    //------------------Tests------------------------
+
+    // Junit
+    ext.junit_version = '4.12'
+    // Androidx Junit Test
+    ext.androidxJunitTest_version = '1.1.1'
+    // Espresso Core
+    ext.espressoCore_version = '3.2.0'
 
     repositories {
         google()
@@ -14,8 +49,9 @@ buildscript {
         
     }
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.5.3'
+        classpath "com.android.tools.build:gradle:$buildGradle_version"
         classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath "android.arch.navigation:navigation-safe-args-gradle-plugin:$navigation_version"
         // NOTE: Do not place your application dependencies here; they belong
         // in the individual module build.gradle files
     }

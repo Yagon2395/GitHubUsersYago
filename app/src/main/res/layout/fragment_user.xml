@@ -1,15 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".views.activitys.MainActivity">
 
     <data>
         <variable
-            name="viewModel"
-            type="com.example.githubusers_testecriar_yago.viewmodels.MainActivityViewModel" />
-
-
+            name="viewmodel"
+            type="com.example.githubusers_testecriar_yago.viewmodels.UserListViewModel" />
 
         <import type="android.view.View" />
     </data>
@@ -22,19 +19,18 @@
             android:id="@+id/recycler_view"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            app:items="@{viewModel.users}"
             />
 
         <ProgressBar
             android:layout_width="70dp"
             android:layout_height="70dp"
             android:layout_centerInParent="true"
-            android:visibility="@{viewModel.loadingVisibility ?  View.VISIBLE : View.GONE}" />
+            android:visibility="@{viewmodel.dataLoading ?  View.VISIBLE : View.GONE}" />
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@{viewModel.message}"
-            android:visibility="@{viewModel.loadingVisibility ? View.GONE : View.VISIBLE }" />
+            android:text="@{viewmodel.errorMessage}"
+            android:visibility="@{viewmodel.error ? View.VISIBLE : View.GONE }" />
     </RelativeLayout>
 </layout>

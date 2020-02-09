@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@id/userListFragment">
+
+    <fragment
+        android:id="@+id/userListFragment"
+        android:name="com.example.githubusers_testecriar_yago.views.fragments.UserFragment"
+        android:label="User List"
+        tools:layout="@layout/fragment_user" >
+        <action
+            android:id="@+id/action_userListFragment_to_userDetailFragment"
+            app:destination="@id/userDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/userDetailFragment"
+        android:name="com.example.githubusers_testecriar_yago.views.fragments.UserDetailFragment"
+        android:label="User Detail">
+        <argument
+            android:name="user"
+            app:argType="com.example.githubusers_testecriar_yago.models.entities.User" />
+    </fragment>
+
+</navigation>
